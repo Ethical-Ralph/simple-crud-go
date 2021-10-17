@@ -9,7 +9,7 @@ import (
 func Error(rw http.ResponseWriter, msg string) {
 
 	if msg == "" {
-		msg = "Success"
+		msg = "An error occurred"
 	}
 
 	json.NewEncoder(rw).Encode(map[string]interface{}{
